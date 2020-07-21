@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>KHS Guardian</title>
+
+  
+
+  <!-- Custom fonts for this template -->
+  
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href=“https://maxcdn.bootstrapcdn.com/font-awesome/4.4.1/css/font-awesome.min.css”/>
+<style>
+ .navbar-nav {
+      flex-direction: row;
+    }
+    
+    .nav-link {
+      padding-right: .5rem !important;
+      padding-left: .5rem !important;
+    }
+    
+    /* Fixes dropdown menus placed on the right side */
+    .ml-auto .dropdown-menu {
+      left: auto !important;
+      right: 0px;
+    }
+    .text-box{
+      width: 500px;
+      height: 300px;
+      margin-left: -90px;
+      margin-top: 200px;
+      background-color: #ffffff;
+      padding: 20px;
+    }
+
+    .text-box-left{
+      width: 600px;
+      height: 300px;
+      margin-left: 20px;
+      margin-top: 70px;
+      background-color: #ffffff;
+      padding: 20px;
+    }
+    .img-text{
+      width: 500px;
+      height: 250px;
+      padding: 20px;
+      /* margin-top: -300px; */
+      background-color: #ffffff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0.7;
+    }
+    .bg{
+      background-color: #f7f7f7;
+    }
+    .box-bg{
+      width: 400px;
+      height: 250px;
+      margin-top: 140px;
+    }
+    .img-head{
+      position: absolute;
+      bottom: 8px;
+      left: 36px;
+    }
+    .img-show{
+      position: absolute;
+      width: 400px;
+      height: 220px;
+      /* padding: 20px; */
+      /* margin-top: -300px; */
+      background-color: #ffffff;
+      top: 80px;
+      left: 36px;
+      opacity: 0.8;
+    }
+
+    .img-show-next{
+      position: absolute;
+      width: 400px;
+      height: 220px;
+      /* padding: 20px; */
+      /* margin-top: -300px; */
+      background-color: #ffffff;
+      bottom: 30px;
+      right: 20px;
+      opacity: 0.8;
+    }
+
+    .link-show{
+      position: absolute;
+      bottom: 10px;
+      left: 90px;
+      width: 300px;
+      height: 50px;     
+      background-color: #ffffff;
+      opacity: 0.7;
+    }
+
+    .link-show-img{
+      position: absolute;
+      bottom: 10px;
+      left: 70px;
+      height: 50px;
+      width: 300px;      
+      background-color: #ffffff;
+      opacity: 0.7;
+    }
+
+    .accordion>.card:not(:last-of-type) {
+        border: 1px solid #b3ddff;
+        background: #eff6fb;
+        border-radius: 0px;
+        margin-bottom: 2%;
+    }
+
+    .accordion>.card>.card-header {
+        border-radius: 0;
+    }
+
+    .card-header {
+        border-bottom: 0px solid rgba(0, 0, 0, 0);
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    a[aria-expanded="true"] {
+        color: #5b75e7 !important;
+    }
+
+    .cbody {
+        padding: 0px 40px 26px 70px;
+        font-weight: 400;
+    }
+
+    .blink {
+        color: #1a264a;
+        font: 400 18px/20px "Montserrat", sans-serif;
+    }
+
+    .fasi {
+        font-weight: 900;
+        margin-right: 40px;
+        color: #007bff;
+    }
+
+    .accordion>.card {
+        background: #eff6fb;
+        border: 1px solid #b3ddff;
+    }
+
+    @media only screen and (max-width: 768px) {
+
+    /* For mobile phones: */
+      [class*="text-box"] {
+        width: 340px;
+        height: 250px;
+        padding-bottom: 340px;
+        margin-left: 12px;
+        margin-top: -12px;
+
+      }
+
+      [class*="text-box-left"] {
+        width: 340px;
+        height: 250px;
+        padding-bottom: 400px;
+        margin-left: 12px;
+        margin-top: -12px;
+
+      }
+
+      [class*="bg"] {
+        background-color: #ffffff;
+      }
+
+      [class*="box-bg-product"] {
+        width: 340px;
+        height: 250px;
+
+      }
+
+      [class*="box-bg"] {
+        width: 300px;
+        height: 250px;
+        padding-bottom: 300px;
+        margin-top: -20px;
+        margin-left: 10px;
+
+      }
+
+      [class*="img-text"] {
+        width: 300px;
+        height: 250px;
+        padding-bottom: 300px;
+        margin-top: 40px;
+
+      }
+
+      [class*="mobile"] {
+        width: 300px;
+        height: 250px;
+        padding-bottom: 300px;
+        margin-right: 42px;
+
+      }
+
+      
+
+      [class*="faq"] {
+        
+        margin-top: 80px;
+
+      }
+
+      [class*="img-show"] {
+        position: relative;
+      }
+
+      [class*="img-show"] {
+        position: relative;
+      }
+
+      [class*="img-one"] {
+        padding-bottom: 70px !important;
+      }
+
+      [class*="img-two"] {
+        padding-bottom: 60px;
+        margin-top: -30px;
+        margin-left: -20px;
+        width: 320px;
+        
+      }
+
+      [class*="link-show"] {
+        margin-left: -30px;
+        width: 235px;
+        height: 60px;
+      }
+
+      [class*="link-show-img"] {
+        margin-left: -10px;
+      }
+
+      [class*="img-head"] {
+        position: relative;
+        color: #212529 !important;
+        padding-top: 20px;
+      }
+      
+    }
+</style>
+</head>
+
+<body>
+
+  <!-- Main Content -->
+  <div class="container-fluid" id="hero">
+    <div class="row justify-content-center">
+      <div class="col-lg-12">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a href="">
+          <!-- <img src="./img/logo.png" alt=""> -->
+        </a>
+        <a class="navbar-brand" href="#">KHS Guardian</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="producthome.html">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Industries</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shop</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="product.html">Our Product</a>
+                <a class="dropdown-item" href="#">Our Company</a>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+      </div>
+    </div>
+    <section>
+    <div class="row justify-content-center">
+      <div class="col-lg-12 col-md-8">
+      <!-- <img src="./img/7-clean-republic_1500x.webp" class="img-fluid" alt="Responsive image"> -->
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active img-one">
+              <img class="d-block w-100" src="./img/show-img-2.webp" alt="First slide">
+              <div class="img-show img-two p-3">
+                    <h3>Guardian Cleaner</h3>
+                    <p>Clean Republic is perfect for high touch surfaces, desks, chairs, books, toys and more.</p>
+                    <button class="btn btn-primary">SHOP HERE</button>
+              </div>
+            </div>
+            <div class="carousel-item img-one">
+              <img class="d-block w-100" src="./img/show-img-3.webp" alt="Second slide">
+              <div class="img-show img-two p-3">
+                    <h3>Guardian Disinfectant</h3>
+                    <p>Clean Republic is perfect for disinfecting industrial kitchens, equipment, high touch surfaces like menus, tables, chairs and more.</p>
+                    <button class="btn btn-primary">SHOP HERE</button>
+              </div>
+            </div>
+            <div class="carousel-item img-one">
+              <img class="d-block w-100" src="./img/show-img-1.webp" alt="Third slide">
+              <div class="img-show img-two p-3">
+                    <h3>Sanitizer</h3>
+                    <p>Clean Republic is the perfect solution for Wellness & Fitness Studios. Think floors, surfaces, mirrors, mats, equipment and more.</p>
+                    <button class="btn btn-primary">SHOP HERE</button>
+              </div>
+            </div>
+          </div>
+    </div>
+      </div>
+      <div class="img-head text-white">
+      <h2>The new Standard Cleanliness</h2>
+      <p>proudly Made By The USA</p>
+      </div>
+      
+    </div>
+    </section>
+
+    <section>
+    <div class="row justify-content-center mt-5">
+      <div class="col-lg-2">        
+          <div>
+            <input type='checkbox' data-toggle='collapse' data-target='#collapsediv1' class="mr-1">100% Natural
+            </input>
+          </div>
+            <div id='collapsediv1' class='collapse div1'>
+              <div>
+                coming soon
+              </div>
+            </div>
+      </div>
+
+      <div class="col-lg-2">        
+        <div>
+          <input type='checkbox' data-toggle='collapse' data-target='#collapsediv_d' class="mr-1"> Non-toxi
+          </input>
+        </div>
+          <div id='collapsediv_d' class='collapse div1'>
+            <div>
+              coming soon
+            </div>
+          </div>
+    </div>
+
+    <div class="col-lg-2">        
+      <div>
+        <input type='checkbox' data-toggle='collapse' data-target='#collapsediv_c' class="mr-1">Work on Every Surface
+        </input>
+      </div>
+        <div id='collapsediv_c' class='collapse div1'>
+          <div>
+            coming soon
+          </div>
+        </div>
+    </div>
+
+    <div class="col-lg-2">        
+      <div>
+        <input type='checkbox' data-toggle='collapse' data-target='#collapsediv_b' class="mr-1">Safe for children,animal
+        </input>
+      </div>
+        <div id='collapsediv_b' class='collapse div1'>
+          <div>
+            coming soon
+          </div>
+        </div>
+    </div>
+
+    <div class="col-lg-2">        
+      <div>
+        <input type='checkbox' data-toggle='collapse' data-target='#collapsediv_a' class="mr-1">Inexpensive
+        </input>
+      </div>
+        <div id='collapsediv_a' class='collapse div1'>
+          <div>
+            coming soon
+          </div>
+        </div>
+    </div>
+    </div>
+    </section>
+
+    <section>
+    <div class="row justify-content-center mt-5">
+      <div class="col-lg-10 col-md-8 mt-5 text-right">
+      <img src="./img/show-img-3.webp" class="img-fluid" alt="Responsive image">
+      <div class="img-text text-center">
+          <h1 class="mt-5">Created By Nature........</h1>
+          <h1>perfected By science!</h1>
+      </div>
+      </div>
+      
+    </div>
+    </section>
+
+    <section>
+      <div class="row justify-content-center mt-5">
+        <div class="col-lg-4 col-md-8 mt-5 text-right">
+        <img src="./img/pro-1.webp" class="img-fluid" alt="Responsive image">
+        <div class="link-show-img text-center">
+          <h4 class="mt-2"><a href="producthome.html" style="color:#0e0e0e;">All Purpose Cleaner</a></h4> 
+        </div>
+               
+        </div>
+        <div class="col-lg-4 col-md-8 mt-5 text-right">
+          <img src="./img/pro-6.webp" class="img-fluid" alt="Responsive image">
+          <div class="link-show text-center">
+            <h4 class="mt-2"><a href="producthome.html" style="color:#0e0e0e;">Disinfectant and Sanitizer</a></h4> 
+          </div>        
+        </div>
+        
+      </div>
+    </section>
+
+    <section>
+    <div class="row justify-content-center mt-5">
+      <div class="col-lg-8 col-md-8 faq">
+        <div class="text-center">
+            <h2>FAQs</h2>
+        </div>     
+      </div>
+      <div class="col-lg-8 col-md-8">
+        <img src="./img/line.png" class="img-fluid" alt="Responsive image">
+      </div>
+
+      <div class="col-lg-8 col-md-8 mt-5">
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header px-0" id="headingOne">
+              <h2 class="mb-0">
+                <button class="d-flex justify-content-between px-0 btn btn-link blink" type="button"
+                    data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                    aria-controls="collapseOne">
+                    <i class="fas i-btn fa-flus fasi"></i>What makes Clean Republic products different from other cleaning products?
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+              data-parent="#accordionExample">
+                <div class="card-body cbody">
+                  Our main ingredient is hypochlorous acid (HOCl), a substance found naturally in the 
+            human body, and replicated by scientists by running an electrical charge through a 
+            combination of salt and water. This electro-chemical reaction reproduces hypochlorous 
+            acid within a solution now known as anolyte water. This has paved the way for a new 
+            generation of health, healing and cleanliness. It is nature at its purest, 
+            combined with proven science.
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-8 col-md-8 mt-3">
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header px-0" id="heading_a">
+              <h2 class="mb-0">
+                <button class="d-flex justify-content-between px-0 btn btn-link blink" type="button"
+                    data-toggle="collapse" data-target="#collapse_a" aria-expanded="false"
+                    aria-controls="collapseOne">
+                    <i class="fas i-btn fa-flus fasi"></i>What is HOCl?
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapse_a" class="collapse" aria-labelledby="heading_a"
+              data-parent="#accordionExample">
+                <div class="card-body cbody">
+                  Hypochlorous Acid (HOCL) is a compound produced by the human body and is an integral part of immune response (inside the body). The HOCl in our body kills dangerous microorganisms as a antimicrobial making it equally effective against bacteria, viruses and fungi (outside the body).
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-8 col-md-8 mt-3">
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header px-0" id="heading_b">
+              <h2 class="mb-0">
+                <button class="d-flex justify-content-between px-0 btn btn-link blink" type="button"
+                    data-toggle="collapse" data-target="#collapse_b" aria-expanded="false"
+                    aria-controls="collapseOne">
+                    <i class="fas i-btn fa-flus fasi"></i>How does HOCl work?
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapse_b" class="collapse" aria-labelledby="heading_b"
+              data-parent="#accordionExample">
+                <div class="card-body cbody">
+                  HOCl works to break down the cells that are creating an infection by destroying the cell membrane and its DNA, thus halting its replication or growth process. The human body produces HOCl to reverse markers of epidermal aging, protect against environmental aggressors and cleanse the skin. When utilized as an application 
+            outside the human body, PH-neutral HOCl solution works in much the same way. 
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-8 col-md-8 mt-3">
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header px-0" id="heading_c">
+              <h2 class="mb-0">
+                <button class="d-flex justify-content-between px-0 btn btn-link blink" type="button"
+                    data-toggle="collapse" data-target="#collapse_c" aria-expanded="false"
+                    aria-controls="collapseOne">
+                    <i class="fas i-btn fa-flus fasi"></i>What do your products contain fragrances? What do they smell like?
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapse_c" class="collapse" aria-labelledby="heading_c"
+              data-parent="#accordionExample">
+                <div class="card-body cbody">
+                  Our products to not contain any frangrances or essentials oils as this would destabalize our main ingredient. Our solutions have a very slight chlorine smell upon dispensing, but dissipates almost immediately. 
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-8 col-md-8 mt-3">
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header px-0" id="heading_d">
+              <h2 class="mb-0">
+                <button class="d-flex justify-content-between px-0 btn btn-link blink" type="button"
+                    data-toggle="collapse" data-target="#collapse_d" aria-expanded="false"
+                    aria-controls="collapseOne">
+                    <i class="fas i-btn fa-flus fasi"></i>Are you approved by the Environmental Protection Agency (EPA)?
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapse_d" class="collapse" aria-labelledby="heading_d"
+              data-parent="#accordionExample">
+                <div class="card-body cbody">
+                  Yes, our Disinfectant+Sanitizer is EPA approved as a hospital grade Disinfectant and Sanitizer. *Our All-Purpose Cleaner has not been registered through the EPA and as such is not considered to be a disinfectant or sanitizer. 
+
+
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-8 col-md-8 mt-3">
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header px-0" id="heading_e">
+              <h2 class="mb-0">
+                <button class="d-flex justify-content-between px-0 btn btn-link blink" type="button"
+                    data-toggle="collapse" data-target="#collapse_e" aria-expanded="false"
+                    aria-controls="collapseOne">
+                    <i class="fas i-btn fa-flus fasi"></i>Do your products kill Coronavirus?
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapse_e" class="collapse" aria-labelledby="heading_e"
+              data-parent="#accordionExample">
+                <div class="card-body cbody">
+                  Clean Republic Disinfectant+Sanitizer has demonstrated effectiveness against viruses similar to COVID-19 on hard, nonporous surfaces. Therefore, Clean Republic Disinfectant+Sanitizer can be used against COVID-19 when used in accordance with the directions for use against Norovirus and Rhinovirus type 16 on hard, non-porous surfaces. Refer to the CDC website at https://www.cdc.gov/ for additional information. **Please note our All-Purpose Cleaner is not registered with the EPA and thus does not make any specific kill claims. Learn more about our EPA stamp here. 
+
+
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-8 col-md-8 mt-3">
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header px-0" id="heading_f">
+              <h2 class="mb-0">
+                <button class="d-flex justify-content-between px-0 btn btn-link blink" type="button"
+                    data-toggle="collapse" data-target="#collapse_f" aria-expanded="false"
+                    aria-controls="collapseOne">
+                    <i class="fas i-btn fa-flus fasi"></i>What types of surfaces can Clean Republic be used on?
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapse_f" class="collapse" aria-labelledby="heading_f"
+              data-parent="#accordionExample">
+                <div class="card-body cbody">
+                  The great thing about Clean Republic is that can be used on virtually any surface that needs to be cleaned. Our products work great on any tables or countertops, floors, yoga or gym mats, desks, laptops, cell phones, windows or walls. It's free of harsh chemicals and fumes and won't harm the skin. 
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-8 col-md-8 mt-3">
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header px-0" id="heading_g">
+              <h2 class="mb-0">
+                <button class="d-flex justify-content-between px-0 btn btn-link blink" type="button"
+                    data-toggle="collapse" data-target="#collapse_g" aria-expanded="false"
+                    aria-controls="collapseOne">
+                    <i class="fas i-btn fa-flus fasi"></i>What is special about Clean Republic Disinfectant + Sanitizer?
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapse_g" class="collapse" aria-labelledby="heading_g"
+              data-parent="#accordionExample">
+                <div class="card-body cbody">
+                  There are many attributes that separate our medical grade Disinfectant+ Sanitizer from almost any other brand. Our main ingredient is hypochlorous acid (HOCl), a substance found naturally in the human body, and replicated by scientists by running an electrical charge through a combination of salt and water. This electro-chemical reaction reproduced the hypochlorous acid within a solution now known as anolyte water. Today, hypochlorous acid in a stabilized form, is a weapon to use against the countless hazards that threaten the immune system of your body, or cleanliness of your environment. We have hypochlorous acid in our own bodies to fight from within, and now you have hypochlorous acid in a bottle to fight from the outside. Our Disinfectant+Sanitizer cleans 99.99% of bacteria and viruses including the nasty stuff like Staph, Strep, MRSA, Listeria, Herpes, HIV, H1N1, Common cold. According to the EPA, Clean Republic Disinfectant+Sanitizer can be used against SARS-CoV-2, the virus that causes COVID-19 when used in accordance with the directions. Clean Republic Disinfectant + Sanitizer is free of harsh chemicals and toxic fumes so you may use our product around people, plants, and animals without having to worry about harmful side-effects. Learn more about our D+S EPA Stamp here. 
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-8 col-md-8 mt-3">
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header px-0" id="heading_h">
+              <h2 class="mb-0">
+                <button class="d-flex justify-content-between px-0 btn btn-link blink" type="button"
+                    data-toggle="collapse" data-target="#collapse_h" aria-expanded="false"
+                    aria-controls="collapseOne">
+                    <i class="fas i-btn fa-flus fasi"></i>Are Clean Republic products a “diluted bleach solution”?
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapse_h" class="collapse" aria-labelledby="heading_h"
+              data-parent="#accordionExample">
+                <div class="card-body cbody">
+                  Absolutely not.  Clean Republic Products are actually very different than bleach.  Our main ingredient, hypochlorous acid, belongs to a different oxychlorine species that is not alike to sodium hypochlorite (also known as bleach).  Clean Republic product’s pH are in a neutral range that almost matches the pH of the dermal layer of humans. Bleach solution otherwise known as “Dakins Solution” is of a very high pH, are not shelf stable, and have to be used quickly to be an effective disinfectant.
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-8 col-md-8 mt-3">
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header px-0" id="heading_i">
+              <h2 class="mb-0">
+                <button class="d-flex justify-content-between px-0 btn btn-link blink" type="button"
+                    data-toggle="collapse" data-target="#collapse_i" aria-expanded="false"
+                    aria-controls="collapseOne">
+                    <i class="fas i-btn fa-flus fasi"></i> 
+
+                    Is your hand product a cleanser or sanitizer? What is the difference? 
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapse_i" class="collapse" aria-labelledby="heading_i"
+              data-parent="#accordionExample">
+                <div class="card-body cbody">
+                  Our non-toxic Hand Cleanser is a cleanser not a sanitizer. It oxygenates your hands which has been proven to increase hydration and stimulate natural healing. It can be compared to washing your hands with soap. The main ingredient is HOCl, the infection fighting compound found in the human body. This compound is used to protect against toxins, help fight bacteria, and cleanse the skin. Unlike a traditional hand sanitizer our Hand Cleanser does not contain alcohol.
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-8 col-md-8 mt-3">
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header px-0" id="heading_j">
+              <h2 class="mb-0">
+                <button class="d-flex justify-content-between px-0 btn btn-link blink" type="button"
+                    data-toggle="collapse" data-target="#collapse_j" aria-expanded="false"
+                    aria-controls="collapseOne">
+                    <i class="fas i-btn fa-flus fasi"></i> 
+
+                    Know the difference between cleaning, disinfecting, and sanitizing - 
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapse_j" class="collapse" aria-labelledby="heading_j"
+              data-parent="#accordionExample">
+                <div class="card-body cbody">
+                  Cleaning removes germs, dirt, and impurities from surfaces or objects. Cleaning works by using soap (or detergent) and water to physically remove germs from surfaces. This process does not necessarily kill germs, but by removing them, it lowers their numbers and the risk of spreading infection.
+
+
+                  Disinfecting kills germs on surfaces or objects. Disinfecting works by using chemicals to kill germs on surfaces or objects. This process does not necessarily clean dirty surfaces or remove germs, but by killing germs on a surface after cleaning, it can further lower the risk of spreading infection.
+                  
+                  Sanitizing lowers the number of germs on surfaces or objects to a safe level, as judged by public health standards or requirements. This process works by either cleaning or disinfecting surfaces or objects to lower the risk of spreading infection.
+                  
+                  
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-8 col-md-8 mt-3">
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header px-0" id="heading_k">
+              <h2 class="mb-0">
+                <button class="d-flex justify-content-between px-0 btn btn-link blink" type="button"
+                    data-toggle="collapse" data-target="#collapse_k" aria-expanded="false"
+                    aria-controls="collapseOne">
+                    <i class="fas i-btn fa-flus fasi"></i> 
+
+                    Do you offer Wholesale or Bulk Pricing? 
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapse_k" class="collapse" aria-labelledby="heading_k"
+              data-parent="#accordionExample">
+                <div class="card-body cbody">
+                  Yes we do offer wholesale options for companies wanting to retail our products and for commercial companies ordering in bulk. You can learn more and fill out our application here. 
+
+
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small blue mt-5">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright 
+      <a href="#"> KHS Guardian</a>
+    </div>
+    <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+    
+  </div>  
+
+  <!-- Bootstrap core JavaScript -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script>
+  $(document).ready(function () {
+
+    $('.collapse')
+        .on('shown.bs.collapse', function () {
+            $(this)
+                .parent()
+                .find(".fa-plus")
+                .removeClass("fa-plus")
+                .addClass("fa-minus");
+        })
+        .on('hidden.bs.collapse', function () {
+            $(this)
+                .parent()
+                .find(".fa-minus")
+                .removeClass("fa-minus")
+                .addClass("fa-plus");
+        });
+
+    $("#stricky").removeClass("");
+    $("#stricky").addClass("stricky-fixed")
+  });
+  $('.carousel').carousel({
+    interval: 2000
+  })
+</script>
+</body>
+
+</html>

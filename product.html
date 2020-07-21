@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>KHS Guardian</title>
+
+  
+
+  <!-- Custom fonts for this template -->
+  
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<style>
+ .navbar-nav {
+      flex-direction: row;
+    }
+    
+    .nav-link {
+      padding-right: .5rem !important;
+      padding-left: .5rem !important;
+    }
+    
+    /* Fixes dropdown menus placed on the right side */
+    .ml-auto .dropdown-menu {
+      left: auto !important;
+      right: 0px;
+    }
+    .text-box{
+      width: 500px;
+      height: 300px;
+      margin-left: -90px;
+      margin-top: 200px;
+      background-color: #ffffff;
+      padding: 20px;
+    }
+
+    .text-box-left{
+      width: 600px;
+      height: 300px;
+      margin-left: 20px;
+      margin-top: 70px;
+      background-color: #ffffff;
+      padding: 20px;
+    }
+    .img-text{
+      width: 400px;
+      height: 250px;
+      padding: 20px;
+      /* margin-top: -300px; */
+      background-color: #ffffff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .bg{
+      background-color: #f7f7f7;
+    }
+    .box-bg{
+      width: 400px;
+      height: 250px;
+      margin-top: 140px;
+    }
+
+    .box-bg-product{
+      width: 400px;
+      height: 250px;
+      margin-top: 70px;
+    }
+    .img-head{
+      position: absolute;
+      bottom: 8px;
+      left: 36px;
+    }
+    .img-show{
+      position: absolute;
+      width: 400px;
+      height: 220px;
+      /* padding: 20px; */
+      /* margin-top: -300px; */
+      background-color: #ffffff;
+      top: 80px;
+      left: 36px;
+      opacity: 0.8;
+    }
+
+    .img-show-next{
+      position: absolute;
+      width: 400px;
+      height: 220px;
+      /* padding: 20px; */
+      /* margin-top: -300px; */
+      background-color: #ffffff;
+      bottom: 30px;
+      right: 20px;
+      opacity: 0.8;
+    }
+
+    .accordion>.card:not(:last-of-type) {
+        border: 1px solid #b3ddff;
+        background: #eff6fb;
+        border-radius: 0px;
+        margin-bottom: 2%;
+    }
+
+    .accordion>.card>.card-header {
+        border-radius: 0;
+    }
+
+    .card-header {
+        border-bottom: 0px solid rgba(0, 0, 0, 0);
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    a[aria-expanded="true"] {
+        color: #5b75e7 !important;
+    }
+
+    .cbody {
+        padding: 0px 40px 26px 88px;
+        font-weight: 400;
+    }
+
+    .blink {
+        color: #1a264a;
+        font: 400 18px/20px "Montserrat", sans-serif;
+    }
+
+    .fasi {
+        font-weight: 900;
+        margin-right: 40px;
+        color: #007bff;
+    }
+
+    .accordion>.card {
+        background: #eff6fb;
+        border: 1px solid #b3ddff;
+    }
+
+    @media only screen and (max-width: 768px) {
+
+    /* For mobile phones: */
+      [class*="box-bg"] {
+        width: 340px;
+        height: 250px;
+        padding-bottom: 140px;
+
+      }
+
+      [class*="box-bg-product"] {
+        width: 340px;
+        height: 250px;
+
+      }
+
+      [class*="disc"] {
+        font-size: 1.5rem;
+
+      }
+    }
+</style>
+</head>
+
+<body>
+
+  <!-- Main Content -->
+  <div class="container-fluid" id="hero">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html">KHS Guardian</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="producthome.html">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Industries</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shop</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Our Product</a>
+                <a class="dropdown-item" href="#">Our Company</a>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+
+
+    <section>
+    <div class="row justify-content-center mt-5">
+        <div class="col-lg-8 col-md-8">
+        <div class="text-center">
+            <h3>HYPOCHLOROUS ACID ("HOCL")</h3>
+            <p>Mother Nature's Miracle Cleaner</p>
+
+        </div>
+        </div>
+
+        <div class="col-lg-8 col-md-8">
+        <img src="./img/product-1.png" class="img-fluid" alt="Responsive image">
+        </div>
+        <div class="col-lg-7 col-md-8 mt-3">
+        <div class="">
+            <p>When we first started producing and testing hypochlorous acid, we honestly couldn't believe what we had stumbled upon. We have been using dangerous chemicals like bleach to clean our homes for decades and the solution to this problem was sitting right in front of us. Why not use something that naturally occurs when lightning strikes the ocean? Or better yet, something that our very own bodies produce to fight infection? It seems that we as humans tend to think that our creations are more powerful than billions of years of evolution. We have seen first-hand the dangers of common household chemicals and truly believe that we have a product that can have a positive impact on the world. Join us on this journey to change the paradigm of how we clean. Let's unite the world to create a Clean Republic.</p>
+
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <section>
+    <div class="row justify-content-center mt-5">
+        <div class="col-lg-8 col-md-8">
+        <img src="./img/line.png" class="img-fluid" alt="Responsive image">
+        </div>
+    </div>
+    </section>
+
+    <section>
+    <div class="row justify-content-center mt-5">
+        <div class="col-lg-8 col-md-8">
+            <div class="text-center">
+                <h3>WHAT IS HYPOCHLOROUS ACID?</h3>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-3">
+            <div class="col-lg-4 text-center">
+            <h4 class="text-center"> Water</h4>
+            <img src="./img/water.png" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class="col-lg-4 text-center">
+            <h4 class="text-center"> Salt</h4>
+            <img src="./img/salt.png" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class="col-lg-4 text-center">
+            <h4 class="text-center">Electricity</h4>
+            <img src="./img/Electricity.png" class="img-fluid" alt="Responsive image">
+            </div>
+        </div>
+
+        <div class="col-lg-10 col-md-8 mt-3">
+            <div class="">
+              <p>HOCL is produced by white blood cells and is an integral part of immune response (inside the body). HOCl kills dangerous microorganisms as a antimicrobial making it equally effective against bacteria, viruses and fungi (outside the body).</p>
+            </div>
+        </div>       
+    </div>
+    </section>
+
+    <section>
+    <div class="row justify-content-center mt-5">
+        <div class="col-lg-8 col-md-8">
+        <img src="./img/line.png" class="img-fluid" alt="Responsive image">
+        </div>
+    </div>
+    </section>
+
+    <section>
+    <div class="row justify-content-center mt-5">
+      <div class="col-lg-6 col-md-8 mt-5 text-right">
+      <img src="./img/man.png" class="img-fluid" alt="Responsive image">
+      </div>
+      <div class="col-lg-6 col-md-8 mt-5">
+        <div class="box-bg text-center">
+          <h1>ORIGIN</h1>
+          <p>In 1834, French chemist Antoine Jérôme Balard discovered HOCl as the infection fighting compound found naturally in the white blood cells of the human body. Balard’s work would most notably used thereafter by armies in World War I and World War II for wound cleaning and to neutralize chemical burns. Today, it is most commonly used on humans, animals and the natural environment to clean and disinfect.</p>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <section>
+    <div class="row justify-content-center mt-5">
+        <div class="col-lg-8 col-md-8">
+        <img src="./img/line.png" class="img-fluid" alt="Responsive image">
+        </div>
+    </div>
+    </section>
+
+    <section>
+    <div class="row justify-content-center mt-5">
+        <div class="col-lg-8">
+          <div class="text-center">
+            <h3>HOW DOES IT WORK?</h3>
+            <p> HOCl works to break down the cells that are creating an infection by destroying the cell membrane and its DNA, thus halting its replication or growth process. The human body produces HOCl to reverse markers of epidermal aging, protect against environmental aggressors and cleanse the skin. When utilized as an application outside the human body, PH-neutral HOCl solution works in much the same way.</p>
+
+          </div>
+
+        </div>
+        <div class="col-lg-5 col-md-8">
+        <img src="./img/product-4.jpg" class="img-fluid" alt="Responsive image">
+        </div>
+    </div>
+    </section>
+
+    <section>
+    <div class="row justify-content-center mt-5">
+        <div class="col-lg-8 col-md-8">
+        <img src="./img/line.png" class="img-fluid" alt="Responsive image">
+        </div>
+    </div>
+    </section>
+
+    <section>
+    <div class="row justify-content-center mt-5">
+        <div class="col-lg-10 col-md-8">
+            <div class="text-center">
+                <h3>WHY USE HOCL?</h3>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-3">
+            <div class="col-lg-4 text-center">
+            
+            <img src="./img/product-5.png" class="img-fluid" alt="Responsive image">
+            <h4 class="text-center">  All-Natural</h4>
+            <p class="text-center">Produced with pure water, salt & electricity</p>
+            </div>
+            <div class="col-lg-4 text-center">
+            
+            <img src="./img/product-6.png" class="img-fluid" alt="Responsive image">
+            <h4 class="text-center"> Eco-Friendly</h4>
+            <p class="text-center">No harsh chemicals or toxic fumes</p>
+            </div>
+            <div class="col-lg-4 text-center">
+            
+            <img src="./img/product-7.png" class="img-fluid" alt="Responsive image">
+            <h4 class="text-center">Responsible</h4>
+            <p class="text-center">Neutral pH, no VOC’s, fragrances, alcohol, petrochemicals or sulfates.</p>
+            </div>
+        </div>       
+    </div>
+    </section>
+
+    <section>
+    <div class="row justify-content-center mt-5">
+        <div class="col-lg-8 col-md-8">
+        <img src="./img/line.png" class="img-fluid" alt="Responsive image">
+        </div>
+    </div>
+    </section>
+
+    <section>
+    <div class="row justify-content-center mt-5">
+      <div class="col-lg-5 col-md-8 order-lg-2 mt-5">
+      <img src="./img/product-8.jpg" class="img-fluid" alt="Responsive image">
+      </div>
+      <div class="col-lg-5 col-md-8 mt-5 order-lg-1">
+      <div class="box-bg-product">
+          <h1>WHY NOW?</h1>
+          <p>HOCl has been experimented with for years. However, the challenge with HOCl has always been in the stabilization of the solution in order to make it a commercially viable solution. Our chemists have figured out how to stabilize the solution without using any additives, which would jeopardize the purity of the product. And we can't think of a better time than now to adopt a healthier way of consistent cleaning.</p>
+      </div>
+        </div>
+    </div>
+    </section>
+
+    <section>
+    <div class="row justify-content-center mt-5">
+        <div class="col-lg-8 col-md-8">
+        <img src="./img/line.png" class="img-fluid" alt="Responsive image">
+        </div>
+    </div>
+    </section>
+
+    <section>
+    <div class="row justify-content-center mt-5">
+      <div class="col-lg-5 col-md-8 order-lg-2 mt-5">
+        <div class="text-center">
+          <p>"In preparation of reopening and our future vision of providing clean, non-toxic products for our guests and team, we are excited to partner with Clean Republic who offers one of the most effective EPA registered hospital-grade disinfectants for cleaning our spas while being 100% natural & free of harsh chemicals."
+            - Allison Langenderfer | CEO & President of Spavia</p>
+        </div>
+      </div>
+    </div>
+    </section>
+
+
+    <section>
+    <div class="row justify-content-center mt-5">
+        <div class="col-lg-8 col-md-8">
+        <img src="./img/line.png" class="img-fluid" alt="Responsive image">
+        </div>
+    </div>
+    </section>
+
+    <section>
+    <div class="row justify-content-center mt-5">
+      <div class="col-lg-5 col-md-8 mt-5 text-right">
+      <img src="./img/pro-1.webp" class="img-fluid" alt="Responsive image">
+      </div>
+      <div class="col-lg-5 col-md-8 mt-5">
+        <div class="box-bg">
+          <h1>ALL-PURPOSE CLEANER</h1>
+          <p>All-Purpose Cleanser: this product is designed to be used on a daily basis to remove germs, dirt and impurities from surfaces and objects. This formulation doesn’t necessarily kill germs, but by removing them, it lowers their numbers and the risk of spreading infection. Unless your current cleaning solution states “disinfectant” on the label, you are using a “cleaner”.</p>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <section>
+    <div class="row justify-content-center mt-5">
+        <div class="col-lg-8 col-md-8">
+        <img src="./img/line.png" class="img-fluid" alt="Responsive image">
+        </div>
+    </div>
+    </section>
+
+    <section>
+    <div class="row justify-content-center mt-5">
+      <div class="col-lg-5 col-md-8 order-lg-2 mt-5">
+      <img src="./img/pro-3.webp" class="img-fluid" alt="Responsive image">
+      </div>
+      <div class="col-lg-5 col-md-8 mt-5 order-lg-1">
+      <div class="box-bg-product text-center">
+          <h1 class="disc">DISINFECTANT+SANITIZER</h1>
+          <p>Disinfectant+Sanitizer: this product is designed for the heavy lifting. Our Disinfectant + Sanitizer cleans 99.9% of bacteria and viruses including the nasty stuff like Staph, Strep, MRSA, Listeria, Herpes, HIV, H1N1, SARS-CoV-2 and Common cold. Read our official EPA</p>
+      </div>
+        </div>
+    </div>
+    </section>
+
+    
+
+    <!-- Footer -->
+    <footer class="page-footer font-small blue mt-5">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="#"> KHS Guardian</a>
+    </div>
+    <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+    
+  </div>  
+
+  <!-- Bootstrap core JavaScript -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script>
+  $('.carousel').carousel({
+    interval: 2000
+  })
+</script>
+</body>
+
+</html>

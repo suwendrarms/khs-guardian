@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>KHS Guardian</title>
+
+  
+
+  <!-- Custom fonts for this template -->
+  
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<style>
+ .navbar-nav {
+      flex-direction: row;
+    }
+    
+    .nav-link {
+      padding-right: .5rem !important;
+      padding-left: .5rem !important;
+    }
+    
+    /* Fixes dropdown menus placed on the right side */
+    .ml-auto .dropdown-menu {
+      left: auto !important;
+      right: 0px;
+    }
+    .text-box{
+      width: 500px;
+      height: 300px;
+      margin-left: -90px;
+      margin-top: 200px;
+      background-color: #ffffff;
+      padding: 20px;
+    }
+
+    .text-box-left{
+      width: 600px;
+      height: 300px;
+      margin-left: 20px;
+      margin-top: 70px;
+      background-color: #ffffff;
+      padding: 20px;
+    }
+    .img-text{
+      width: 400px;
+      height: 250px;
+      padding: 20px;
+      /* margin-top: -300px; */
+      background-color: #ffffff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .bg{
+      background-color: #f7f7f7;
+    }
+    .box-bg{
+      width: 400px;
+      height: 250px;
+      margin-top: 140px;
+    }
+    .img-head{
+      position: absolute;
+      bottom: 8px;
+      left: 36px;
+    }
+    .img-show{
+      position: absolute;
+      width: 400px;
+      height: 220px;
+      /* padding: 20px; */
+      /* margin-top: -300px; */
+      background-color: #ffffff;
+      top: 80px;
+      left: 36px;
+      opacity: 0.8;
+    }
+
+    .img-show-next{
+      position: absolute;
+      width: 400px;
+      height: 220px;
+      /* padding: 20px; */
+      /* margin-top: -300px; */
+      background-color: #ffffff;
+      bottom: 30px;
+      right: 20px;
+      opacity: 0.8;
+    }
+
+    .accordion>.card:not(:last-of-type) {
+        border: 1px solid #b3ddff;
+        background: #eff6fb;
+        border-radius: 0px;
+        margin-bottom: 2%;
+    }
+
+    .accordion>.card>.card-header {
+        border-radius: 0;
+    }
+
+    .card-header {
+        border-bottom: 0px solid rgba(0, 0, 0, 0);
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    a[aria-expanded="true"] {
+        color: #5b75e7 !important;
+    }
+
+    .cbody {
+        padding: 0px 40px 26px 88px;
+        font-weight: 400;
+    }
+
+    .blink {
+        color: #1a264a;
+        font: 400 18px/20px "Montserrat", sans-serif;
+    }
+
+    .fasi {
+        font-weight: 900;
+        margin-right: 40px;
+        color: #007bff;
+    }
+
+    .accordion>.card {
+        background: #eff6fb;
+        border: 1px solid #b3ddff;
+    }
+
+    @media only screen and (max-width: 768px) {
+
+    /* For mobile phones: */
+      [class*="text-box"] {
+        width: 340px;
+        height: 250px;
+        padding-bottom: 340px;
+        margin-left: 12px;
+        margin-top: -12px;
+
+      }
+
+      [class*="text-box-left"] {
+        width: 340px;
+        height: 250px;
+        padding-bottom: 400px;
+        margin-left: 12px;
+        margin-top: -12px;
+
+      }
+
+      [class*="bg"] {
+        background-color: #ffffff;
+      }
+
+      [class*="box-bg-product"] {
+        width: 340px;
+        height: 250px;
+
+      }
+
+      [class*="box-bg"] {
+        width: 300px;
+        height: 250px;
+        padding-bottom: 300px;
+        margin-top: -20px;
+        margin-left: 10px;
+
+      }
+
+      [class*="img-text"] {
+        width: 300px;
+        height: 250px;
+        padding-bottom: 300px;
+        margin-top: 40px;
+
+      }
+
+      [class*="mobile"] {
+        width: 300px;
+        height: 250px;
+        padding-bottom: 300px;
+        margin-right: 42px;
+
+      }
+
+      [class*="mobile-text"] {
+        width: 300px;
+        height: 250px;
+        padding-bottom: 300px;
+        margin-left: -20px;
+
+      }
+
+      [class*="faq"] {
+        
+        margin-top: 80px;
+
+      }
+
+      [class*="img-show"] {
+        position: relative;
+      }
+
+      [class*="img-show"] {
+        position: relative;
+      }
+
+      [class*="img-one"] {
+        padding-bottom: 60px !important;
+      }
+
+      [class*="img-two"] {
+        padding-bottom: 60px;
+        margin-top: -30px;
+      }
+
+      [class*="footer-text"] {
+        padding-bottom: 70px;
+      }
+    }
+</style>
+</head>
+
+<body>
+
+  <!-- Main Content -->
+  <div class="container-fluid" id="hero">
+    <div class="row justify-content-center">
+      <div class="col-lg-12">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html">KHS Guardian</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="producthome.html">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Industries</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shop</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="product.html">Our Product</a>
+                <a class="dropdown-item" href="#">Our Company</a>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+      </div>
+    </div>
+    
+    <section>
+    <div class="row justify-content-center mt-5">
+      <div class="col-lg-6 col-md-8 mt-5">
+      <img src="./img/pro-1.webp" class="img-fluid" alt="Responsive image">
+      </div>
+      <div class="col-lg-5 col-md-8 mt-5 ">
+        <div class="text-box">
+          <h1>HOSPITAL GRADE & EPA APPROVED</h1>
+          <p>Clean Republic's Disinfectant+Sanitizer Obtains EPA Approval for Emerging Pathogens Labeling for use Against SARS-CoV-2, the novel coronavirus that causes the disease COVID-19. 
+
+            Our Disinfectant+Sanitizer is proven to kill Norovirus, Rhinovirus, and HIV, as well superbugs like MRSA and C.Diff., a condition that has plagued hospitals for years.</p>
+        </div>
+          </div>
+    </div>
+    </section>
+
+    <section>
+    <div class="row justify-content-center mt-5">
+      <div class="col-lg-6 col-md-8 mt-5 order-lg-2 bg p-4">
+      <img src="./img/pro-2.webp" class="img-fluid" alt="Responsive image">
+      </div>
+      <div class="col-lg-5 col-md-8 mt-5 order-lg-1 bg p-4">
+      <div class="text-box-left">
+          <h1>Only 3 Ingredients: Salt + Water + Electricity</h1>
+          <p>Clean Republic's entire product line is made using the same all-star ingredient, HOCl. It's nature in its purest form, backed by scientific evidence. The main ingredient hypochlorous acid (HOCl), is the infection fighting compound found naturally in the human body and replicated by scientists by running an electrical charge through a combination of salt and water. For a healthy and clean environment, choose Clean Republic.</p>
+      </div>
+        </div>
+    </div>
+    </section>
+
+    <section>
+    <div class="row justify-content-center mt-5">
+      <div class="col-lg-6 col-md-8 mt-5 text-right">
+      <img src="./img/pro-3.webp" class="img-fluid" alt="Responsive image">
+      </div>
+      <div class="col-lg-6 col-md-8 mt-5">
+        <div class="box-bg text-center">
+          <h1>HOSPITAL GRADE & EPA APPROVED</h1>
+          <p>All-Purpose Everyday Cleaner - 300ppm (1 gal) Makes 10 Gallons!
+              $88.00</p>
+
+              <button type="button" class="btn btn-primary btn-lg btn-block">ADD TO CARD</button>
+              <button type="button" class="btn btn-secondary btn-lg btn-block">BUY IT NOW</button>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <section>
+    <div class="row justify-content-center mt-5">
+      <div class="col-lg-12 col-md-8 mt-5 text-right">
+      <img src="./img/pro-4.webp" class="img-fluid" alt="Responsive image">
+      <div class="img-text text-center">
+          <h1>Truly Non-Toxic</h1>
+          <p>Say farewell to harsh chemicals and toxic fumes and hello to HOCl. Our entire product line is made using the same main ingredient, hypochlorous acid (HOCl), the infection fighting compound found naturally in the human body. It's is nature in its purest form, combined with proven science.</p>
+      </div>
+      </div>
+      
+    </div>
+    </section>
+
+    <section>
+    <div class="row justify-content-center mt-5 p-5">
+      <div class="col-lg-7 col-md-8 mt-5 text-right bg p-5">
+      <img src="./img/pro-5.webp" class="img-fluid" alt="Responsive image">
+      </div>
+
+      <div class="col-lg-5 col-md-8 mt-5 bg">
+      <div class="box-bg mobile-text">
+        <h1>For Home & Business</h1>
+        <p>Whether you're considering cleaning products for your home or for your business, we know you take a great deal of time ensuring these are healthy and safe. Finally, there are effective cleaning solutions that can offer consumers peace of mind without having to sacrifice the integrity of a clean and healthy environment, or the safety of your family, employees, or customers.  </p>
+      </div>
+      </div>
+      
+    </div>
+    </section>
+
+    <section>
+    <div class="row justify-content-center mt-5 bg footer-text">
+      <div class="col-lg-5 col-md-8 order-lg-2">
+      <img src="./img/pro-6.webp" class="img-fluid" alt="Responsive image">
+      </div>
+      <div class="col-lg-6 col-md-8 mt-5 order-lg-1">
+      <div class="box-bg mobile">
+          <h1>The Next Generation of Clean. Proudly made in the USA.</h1>
+          <p>Our All-Purpose Everyday cleaner is a non-toxic, eco-friendly cleaning solution formulated using 3 simple ingredients - salt, water and electricity. Use it everyday, everywhere to stay clean, happy and healthy. It's is nature in its purest form, combined with proven science. </p>
+      </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small blue mt-5">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright 
+      <a href="#"> KHS Guardian</a>
+    </div>
+    <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+    
+  </div>  
+
+  <!-- Bootstrap core JavaScript -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script>
+  $('.carousel').carousel({
+    interval: 2000
+  })
+</script>
+</body>
+
+</html>
