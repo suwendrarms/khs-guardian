@@ -1,0 +1,2 @@
+# khs-guardian
+for store
