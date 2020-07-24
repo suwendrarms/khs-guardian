@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>KHS Guardian</title>
+  <title>KHS Guardian store</title>
 
   
 
@@ -20,6 +20,7 @@
   <!-- Custom styles for this template -->
   <link href="css/clean-blog.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href=“https://maxcdn.bootstrapcdn.com/font-awesome/4.4.1/css/font-awesome.min.css”/>
 <style>
  .navbar-nav {
       flex-direction: row;
@@ -53,7 +54,7 @@
       padding: 20px;
     }
     .img-text{
-      width: 400px;
+      width: 500px;
       height: 250px;
       padding: 20px;
       /* margin-top: -300px; */
@@ -62,6 +63,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      opacity: 0.7;
     }
     .bg{
       background-color: #f7f7f7;
@@ -100,6 +102,26 @@
       opacity: 0.8;
     }
 
+    .link-show{
+      position: absolute;
+      bottom: 10px;
+      left: 90px;
+      width: 300px;
+      height: 50px;     
+      background-color: #ffffff;
+      opacity: 0.7;
+    }
+
+    .link-show-img{
+      position: absolute;
+      bottom: 10px;
+      left: 70px;
+      height: 50px;
+      width: 300px;      
+      background-color: #ffffff;
+      opacity: 0.7;
+    }
+
     .accordion>.card:not(:last-of-type) {
         border: 1px solid #b3ddff;
         background: #eff6fb;
@@ -121,7 +143,7 @@
     }
 
     .cbody {
-        padding: 0px 40px 26px 88px;
+        padding: 0px 40px 26px 70px;
         font-weight: 400;
     }
 
@@ -197,13 +219,7 @@
 
       }
 
-      [class*="mobile-text"] {
-        width: 300px;
-        height: 250px;
-        padding-bottom: 300px;
-        margin-left: -20px;
-
-      }
+      
 
       [class*="faq"] {
         
@@ -220,17 +236,33 @@
       }
 
       [class*="img-one"] {
-        padding-bottom: 60px !important;
+        padding-bottom: 70px !important;
       }
 
       [class*="img-two"] {
         padding-bottom: 60px;
         margin-top: -30px;
+        margin-left: -20px;
+        width: 320px;
+        
       }
 
-      [class*="footer-text"] {
-        padding-bottom: 70px;
+      [class*="link-show"] {
+        margin-left: -30px;
+        width: 235px;
+        height: 60px;
       }
+
+      [class*="link-show-img"] {
+        margin-left: -10px;
+      }
+
+      [class*="img-head"] {
+        position: relative;
+        color: #212529 !important;
+        padding-top: 20px;
+      }
+      
     }
 </style>
 </head>
@@ -242,9 +274,12 @@
     <div class="row justify-content-center">
       <div class="col-lg-12">
       <nav class="navbar navbar-expand-lg navbar-light">
+        <a href="">
+          <!-- <img src="./img/logo.png" alt=""> -->
+        </a>
         <a class="navbar-brand" href="index.html">
-          <img src="./img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-          KHS Guardian</a>
+            <img src="./img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            KHS Guardian</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -274,100 +309,23 @@
       </nav>
       </div>
     </div>
-    
-    <section>
-    <div class="row justify-content-center mt-5">
-      <div class="col-lg-6 col-md-8 mt-5">
-      <img src="./img/pro-1.webp" class="img-fluid" alt="Responsive image">
-      </div>
-      <div class="col-lg-5 col-md-8 mt-5 ">
-        <div class="text-box">
-          <h1>HOSPITAL GRADE & EPA APPROVED</h1>
-          <p>Clean Republic's Disinfectant+Sanitizer Obtains EPA Approval for Emerging Pathogens Labeling for use Against SARS-CoV-2, the novel coronavirus that causes the disease COVID-19. 
 
-            Our Disinfectant+Sanitizer is proven to kill Norovirus, Rhinovirus, and HIV, as well superbugs like MRSA and C.Diff., a condition that has plagued hospitals for years.</p>
-        </div>
-          </div>
-    </div>
-    </section>
 
     <section>
-    <div class="row justify-content-center mt-5">
-      <div class="col-lg-6 col-md-8 mt-5 order-lg-2 bg p-4">
-      <img src="./img/pro-2.webp" class="img-fluid" alt="Responsive image">
-      </div>
-      <div class="col-lg-5 col-md-8 mt-5 order-lg-1 bg p-4">
-      <div class="text-box-left">
-          <h1>Only 3 Ingredients: Salt + Water + Electricity</h1>
-          <p>Clean Republic's entire product line is made using the same all-star ingredient, HOCl. It's nature in its purest form, backed by scientific evidence. The main ingredient hypochlorous acid (HOCl), is the infection fighting compound found naturally in the human body and replicated by scientists by running an electrical charge through a combination of salt and water. For a healthy and clean environment, choose Clean Republic.</p>
-      </div>
-        </div>
-    </div>
-    </section>
-
-    <section>
-    <div class="row justify-content-center mt-5">
-      <div class="col-lg-6 col-md-8 mt-5 text-right">
-      <img src="./img/pro-3.webp" class="img-fluid" alt="Responsive image">
-      </div>
-      <div class="col-lg-6 col-md-8 mt-5">
-        <div class="box-bg text-center">
-          <h1>HOSPITAL GRADE & EPA APPROVED</h1>
-          <p>All-Purpose Everyday Cleaner - 300ppm (1 gal) Makes 10 Gallons!
-              $88.00</p>
-
-              <button type="button" class="btn btn-primary btn-lg btn-block">ADD TO CARD</button>
-              <button type="button" class="btn btn-secondary btn-lg btn-block">BUY IT NOW</button>
-        </div>
-      </div>
-    </div>
-    </section>
-
-    <section>
-    <div class="row justify-content-center mt-5">
-      <div class="col-lg-12 col-md-8 mt-5 text-right">
-      <img src="./img/pro-4.webp" class="img-fluid" alt="Responsive image">
+    <div class="row justify-content-center mt-5 mb-5">
+      <div class="col-lg-10 col-md-8 mt-5 text-right">
+      <img src="./img/show-img-3.webp" class="img-fluid" alt="Responsive image">
       <div class="img-text text-center">
-          <h1>Truly Non-Toxic</h1>
-          <p>Say farewell to harsh chemicals and toxic fumes and hello to HOCl. Our entire product line is made using the same main ingredient, hypochlorous acid (HOCl), the infection fighting compound found naturally in the human body. It's is nature in its purest form, combined with proven science.</p>
+          <h1 class="mt-5">Comming Soon........</h1>
       </div>
       </div>
       
     </div>
     </section>
 
-    <section>
-    <div class="row justify-content-center mt-5 p-5">
-      <div class="col-lg-7 col-md-8 mt-5 text-right bg p-5">
-      <img src="./img/pro-5.webp" class="img-fluid" alt="Responsive image">
-      </div>
-
-      <div class="col-lg-5 col-md-8 mt-5 bg">
-      <div class="box-bg mobile-text">
-        <h1>For Home & Business</h1>
-        <p>Whether you're considering cleaning products for your home or for your business, we know you take a great deal of time ensuring these are healthy and safe. Finally, there are effective cleaning solutions that can offer consumers peace of mind without having to sacrifice the integrity of a clean and healthy environment, or the safety of your family, employees, or customers.  </p>
-      </div>
-      </div>
-      
-    </div>
-    </section>
-
-    <section>
-    <div class="row justify-content-center mt-5 bg footer-text pb-5">
-      <div class="col-lg-5 col-md-8 order-lg-2">
-      <img src="./img/pro-6.webp" class="img-fluid" alt="Responsive image">
-      </div>
-      <div class="col-lg-6 col-md-8 mt-5 order-lg-1">
-      <div class="box-bg mobile">
-          <h1>The Next Generation of Clean. Proudly made in the USA.</h1>
-          <p>Our All-Purpose Everyday cleaner is a non-toxic, eco-friendly cleaning solution formulated using 3 simple ingredients - salt, water and electricity. Use it everyday, everywhere to stay clean, happy and healthy. It's is nature in its purest form, combined with proven science. </p>
-      </div>
-        </div>
-    </div>
-    </section>
-
- <!-- Footer -->
- <footer class="page-footer font-small pt-5 bg-secondary text-white ">
+    
+    <!-- Footer -->
+<footer class="page-footer font-small pt-5 bg-secondary text-white ">
 
   <!-- Footer Elements -->
   <div class="container">
@@ -408,6 +366,7 @@
 
 </footer>
 <!-- Footer -->
+
     
   </div>  
 
@@ -416,6 +375,27 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script>
+  $(document).ready(function () {
+
+    $('.collapse')
+        .on('shown.bs.collapse', function () {
+            $(this)
+                .parent()
+                .find(".fa-plus")
+                .removeClass("fa-plus")
+                .addClass("fa-minus");
+        })
+        .on('hidden.bs.collapse', function () {
+            $(this)
+                .parent()
+                .find(".fa-minus")
+                .removeClass("fa-minus")
+                .addClass("fa-plus");
+        });
+
+    $("#stricky").removeClass("");
+    $("#stricky").addClass("stricky-fixed")
+  });
   $('.carousel').carousel({
     interval: 2000
   })
